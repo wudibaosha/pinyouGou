@@ -1,0 +1,196 @@
+.wk-detail-header {
+  padding: 32px 32px 0;
+}
+
+// 标签
+.wk-tags-content {
+  padding: 0 32px;
+  margin-top: 8px;
+}
+
+.wk-quick-create-bar {
+  padding: 0 32px;
+  margin-top: 8px;
+}
+
+
+.detail-main {
+  position: relative;
+  height: 100%;
+  padding: 32px 40px 0;
+  overflow: hidden;
+  background-color: $--color-white;
+
+  &.no-padding {
+    padding: 0;
+  }
+}
+
+// 头部加阴影
+.crm-detail-head {
+  padding: 32px 32px 16px;
+
+  &.is-shadow {
+    z-index: 1;
+    box-shadow: $--box-shadow-bottom;
+  }
+}
+
+// 详情
+.d-container-body {
+  flex: 1;
+  height: 0;
+  padding: 0 32px;
+  overflow: scroll;
+
+  .top-padding {
+    padding-top: 16px;
+  }
+
+  .left-right-wrap {
+    margin-top: #{$--interval-base * 2};
+
+    &.is-hidden-right {
+      >.right {
+        display: none;
+      }
+
+      >.left {
+        padding-right: 0;
+      }
+    }
+
+    > .left {
+      flex: 1;
+      padding-right: 40px;
+      overflow: hidden;
+    }
+
+    > .right {
+      flex-shrink: 0;
+      width: 280px;
+    }
+  }
+
+  /deep/ .el-tabs__content {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+
+    .el-tab-pane {
+      overflow: hidden;
+    }
+  }
+
+  /deep/ .el-badge {
+    .el-badge__content {
+      top: 50%;
+      right: -4px;
+    }
+  }
+}
+
+// 老布局样式
+.d-container-bd {
+  flex: 1;
+  padding-top: 15px;
+  overflow: hidden;
+
+  /deep/ .el-tabs__item {
+    top: 2px;
+    margin-top: -2px;
+    font-size: 12px;
+  }
+
+  /deep/ .el-tabs__nav-scroll {
+    min-height: 39px;
+  }
+
+  /deep/ .el-tabs__item.is-active {
+    color: $--color-text-primary;
+    border-top: 2px solid $--color-primary;
+  }
+
+  /deep/ .el-tabs {
+    height: calc(100% - 15px) !important;
+  }
+
+  /deep/ .el-tabs__content {
+    position: relative;
+    height: calc(100% - 40px) !important;
+    padding: 0;
+    overflow: hidden;
+
+    .el-tab-pane {
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+
+  &--left {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    box-shadow: none;
+  }
+
+  &--right {
+    flex-shrink: 0;
+    width: 300px;
+    min-width: 300px;
+    height: calc(100% - 15px);
+    margin-left: 15px;
+    background-color: white;
+    border-top: 1px solid $--border-color-base;
+    border-bottom: 1px solid $--border-color-base;
+    border-left: 1px solid $--border-color-base;
+    box-shadow: none;
+  }
+}
+
+.d-container {
+  position: relative;
+  height: 100%;
+}
+
+/** 审核信息 */
+.examine-info {
+  padding: #{$--interval-base * 2};
+  margin-top: #{$--interval-base * 2};
+  background-color: $--color-n20;
+  border-radius: $--border-radius-base;
+}
+
+// 标星
+.focus-icon {
+  margin-left: #{$--interval-base * 2};
+  font-size: 18px;
+  font-weight: bold;
+  color: $--color-n40;
+  cursor: pointer;
+
+  .wk-focus-on {
+    font-size: 13px;
+  }
+
+  &.active {
+    color: #fac23d;
+  }
+}
+
+// 基本信息
+.detail-head-base {
+  // margin-top: #{$--interval-base * 2};
+
+  padding: #{$--interval-base * 2};
+  background-color: $--color-n20;
+  border-radius: $--border-radius-base;
+}
+
+// 阶段
+.relative-stage-records {
+  padding: 16px;
+  margin-top: 16px;
+  border: $--border-base;
+  border-radius: $--border-radius-base;
+}

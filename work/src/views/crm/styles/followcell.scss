@@ -1,0 +1,170 @@
+/** 跟进记录相关的 日志 审批任务 日程 项目 公共css */
+.fl-c {
+  position: relative;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+/** 头部布局 名字 头像 */
+.fl-h {
+  .fl-h-img {
+    display: block;
+    width: 34px;
+    height: 34px;
+    margin-right: 8px;
+    border-radius: 17px;
+  }
+
+  .fl-h-b {
+    flex: 1;
+
+    .fl-h-name {
+      font-size: 13px;
+      color: $--color-black;
+    }
+
+    .fl-h-time {
+      margin-top: 3px;
+      font-size: 12px;
+      color: $--color-text-secondary;
+    }
+  }
+}
+
+/** 头部 右侧 布局 */
+.fl-h-handle {
+  width: auto;
+
+  .fl-h-handle-name {
+    margin-right: 6px;
+    font-size: 13px;
+    color: $--color-black;
+  }
+}
+
+.fl-h-mark {
+  width: auto;
+
+  .fl-h-mark-img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+
+  .fl-h-mark-name {
+    font-size: 13px;
+    color: $--color-black;
+  }
+}
+
+/** 内容区域 */
+.fl-b {
+  margin: 20px 0 0 40px;
+
+  .fl-b-content {
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: $--color-black;
+  }
+
+  .fl-b-images {
+    width: 310px;
+    margin-top: 5px;
+
+    .fl-b-img-item {
+      position: relative;
+      display: inline-block;
+      width: 98px;
+      height: 98px;
+      margin: 0 4px 4px 0;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  .fl-b-other {
+    margin: 8px 0;
+
+    .fl-b-other-name {
+      margin: 10px 0;
+      font-size: 13px;
+      color: $--color-text-regular;
+    }
+  }
+}
+
+.fl-c::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 15px;
+  z-index: 2;
+  height: 1px;
+  color: #e5e5e5;
+  content: " ";
+  border-top: $--border-base;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.fl-c:first-child::before {
+  display: none;
+}
+
+/** 附件 */
+.fl-b-files {
+  margin-top: 10px;
+}
+
+/** 关联附件 联系人 客户 行布局 */
+.cell {
+  position: relative;
+  padding: 8px;
+  background-color: #f5f7fa;
+  border-radius: 2px;
+
+  .cell-head {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+  }
+
+  .cell-body {
+    flex: 1;
+    font-size: 12px;
+    color: $--color-black;
+  }
+
+  .cell-foot {
+    display: block;
+    width: 20px;
+    padding: 0 4px;
+    margin-right: 8px;
+  }
+}
+
+.cell::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 30px;
+  z-index: 2;
+  height: 1px;
+  color: #e5e5e5;
+  content: " ";
+  border-top: 1px solid #e5e5e5;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.cell:first-child::before {
+  display: none;
+}

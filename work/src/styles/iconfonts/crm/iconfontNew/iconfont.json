@@ -1,0 +1,100 @@
+{
+  "id": "3296810",
+  "name": "我的项目",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "14782906",
+      "name": "结算管理",
+      "font_class": "jiesuanguanli",
+      "unicode": "e8ad",
+      "unicode_decimal": 59565
+    },
+    {
+      "icon_id": "12719942",
+      "name": "新建",
+      "font_class": "xinjian1",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "7617414",
+      "name": "复制",
+      "font_class": "fuzhi1",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "1249071",
+      "name": "新建",
+      "font_class": "xinjian",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "1727259",
+      "name": "02包裹、发货",
+      "font_class": "baoguofahuo",
+      "unicode": "e884",
+      "unicode_decimal": 59524
+    },
+    {
+      "icon_id": "9061265",
+      "name": "下单",
+      "font_class": "xiadan",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "2815710",
+      "name": "复制",
+      "font_class": "fuzhi",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "7940998",
+      "name": "货代",
+      "font_class": "huodai",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "666879",
+      "name": "轮船",
+      "font_class": "lunchuan",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "6752803",
+      "name": "项目保函申请",
+      "font_class": "xiangmubaohanshenqing",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "8860748",
+      "name": "诚信保证金",
+      "font_class": "chengxinbaozhengjin",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "6839508",
+      "name": "发货",
+      "font_class": "fahuo",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    },
+    {
+      "icon_id": "2038450",
+      "name": "ERP_下单",
+      "font_class": "ERP_xiadan",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    }
+  ]
+}

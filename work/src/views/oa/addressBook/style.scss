@@ -1,0 +1,200 @@
+.main {
+  position: relative;
+  height: 100%;
+  padding: 0 #{$--interval-base * 5};
+
+  &-header {
+    .title {
+      font-size: $--font-size-xxlarge;
+      font-weight: $--font-weight-primary;
+      color: $--color-text-primary;
+    }
+
+    &.is-filter-header {
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    .search-input {
+      width: 220px;
+    }
+
+    // // 按钮切换
+    // .tabs {
+    //   display: inline-block;
+
+    //   &-label {
+    //     margin-right: $--interval-base;
+    //   }
+    // }
+
+    // .search-input + .tabs {
+    //   margin-left: #{$--interval-base * 3};
+    // }
+  }
+
+  &-content-wrap {
+    position: relative;
+    height: calc(100% - 50px);
+    margin-top: 30px;
+    overflow: hidden;
+  }
+
+  &-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 100%;
+    padding: $--interval-base;
+    overflow: auto;
+    background-color: rgba($color: #081e42, $alpha: 0.04);
+    border-radius: $--border-radius-base;
+
+    &__title {
+      padding: $--interval-base $--interval-base 0;
+      margin-bottom: #{$--interval-base * 2};
+      color: $--color-n500;
+    }
+
+    &__content {
+      flex: 1;
+      overflow: auto;
+      background-color: $--color-white;
+      border-radius: $--border-radius-base;
+
+      // height: calc(100% - 40px);
+      // overflow-y: overlay;
+      // overflow-x: overlay;
+    }
+  }
+
+  &-content {
+    position: relative;
+    height: 100%;
+    margin-left: 280px;
+    overflow: hidden;
+  }
+
+  .el-table {
+    .focus-icon {
+      font-size: 14px;
+      color: $--color-n40;
+      cursor: pointer;
+
+      &.active {
+        color: $--color-y200;
+      }
+    }
+
+    .user-box {
+      .user-img {
+        margin-right: 15px;
+      }
+    }
+
+    /deep/ .special-row {
+      height: 30px;
+
+      .cell {
+        line-height: 1;
+      }
+
+      background-color: #f5f5f5;
+    }
+  }
+
+  // 菜单包裹
+  .nav-sections-wrap {
+    // background-color: $--color-white;
+    // border-radius: $--border-radius-base;
+  }
+
+  .nav-section {
+    position: relative;
+
+    &__title {
+      position: relative;
+      padding: 0 $--interval-base;
+      font-size: $--font-size-small;
+      line-height: 32px;
+
+      .add-btn {
+        position: absolute;
+        top: 7px;
+        right: #{$--interval-base * 2};
+        padding: 0;
+      }
+    }
+
+    &__content {
+      &.is-padding {
+        padding: $--interval-base;
+      }
+    }
+
+    &.is-padding {
+      padding: 0 $--interval-base;
+    }
+  }
+
+  // el-tree
+  /deep/ .el-tree {
+    position: absolute;
+    min-width: 208px;
+    overflow-x: auto;
+
+    .el-tree-node__content {
+      height: 40px;
+      border-radius: $--border-radius-base;
+    }
+
+    .el-tree-node__children {
+      overflow: visible;
+    }
+
+    .el-tree--highlight-current,
+    .el-tree-node.is-current > .el-tree-node__content {
+      color: $--color-primary;
+      background-color: $--color-n30 !important;
+    }
+
+    .el-tree-node:focus > .el-tree-node__content {
+      background-color: white;
+    }
+  }
+
+  // letters
+  .letters {
+    margin-bottom: 16px;
+
+    .letter {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 30px;
+      height: 20px;
+      padding: 0 4px;
+      line-height: 18px;
+      text-align: center;
+      white-space: nowrap;
+      cursor: pointer;
+      border-radius: 3px;
+
+      &:first-child {
+        width: 40px;
+        margin-left: 4px;
+      }
+
+      &.is-current {
+        color: $--color-white;
+        background-color: $--color-primary;
+      }
+    }
+
+    .letter + .letter {
+      margin-left: 4px;
+    }
+  }
+}

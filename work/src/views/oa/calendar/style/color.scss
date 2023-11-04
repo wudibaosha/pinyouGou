@@ -1,0 +1,155 @@
+// 颜色数组： 后台可以通过返回数值来确定多选框的背景色
+// [
+//   '#0052CC',
+//   '#00A3BF',
+//   '#DE350B',
+//   '#5243AA',
+//   '#00875A',
+//   '#FF991F',
+//   '#091E42',
+//   '#0052CC',
+//   '#00A3BF',
+//   '#DE350B',
+//   '#5243AA']
+.color_1 {
+  /deep/.el-checkbox__inner {
+    border-color: #0052cc;
+  }
+
+  /deep/.is-checked {
+    .el-checkbox__inner {
+      background-color: #0052cc;
+      border-color: #0052cc;
+    }
+  }
+}
+
+.color_2 {
+  /deep/.el-checkbox__inner {
+    border-color: #00a3bf;
+  }
+
+  /deep/.is-checked {
+    .el-checkbox__inner {
+      background-color: #00a3bf;
+      border-color: #00a3bf;
+    }
+  }
+}
+
+.color_3 {
+  /deep/.el-checkbox__inner {
+    border-color: #de350b;
+  }
+
+  /deep/.is-checked {
+    .el-checkbox__inner {
+      background-color: #de350b;
+      border-color: #de350b;
+    }
+  }
+}
+
+.color_4 {
+  /deep/.el-checkbox__inner {
+    border-color: #5243aa;
+  }
+
+  /deep/.is-checked {
+    .el-checkbox__inner {
+      background-color: #5243aa;
+      border-color: #5243aa;
+    }
+  }
+}
+
+.color_5 {
+  /deep/.el-checkbox__inner {
+    border-color: #00875a;
+  }
+
+  /deep/.is-checked {
+    .el-checkbox__inner {
+      background-color: #00875a;
+      border-color: #00875a;
+    }
+  }
+}
+
+.color_6 {
+  /deep/.el-checkbox__inner {
+    border-color: #ff991f;
+  }
+
+  /deep/.is-checked {
+    .el-checkbox__inner {
+      background-color: #ff991f;
+      border-color: #ff991f;
+    }
+  }
+}
+
+.color_7 {
+  /deep/.el-checkbox__inner {
+    border-color: #091e42;
+  }
+
+  /deep/.is-checked {
+    .el-checkbox__inner {
+      background-color: #091e42;
+      border-color: #091e42;
+    }
+  }
+}
+
+.color_8 {
+  /deep/.el-checkbox__inner {
+    border-color: #0052cc;
+  }
+
+  /deep/.is-checked {
+    .el-checkbox__inner {
+      background-color: #0052cc;
+      border-color: #0052cc;
+    }
+  }
+}
+
+.color_9 {
+  /deep/.el-checkbox__inner {
+    border-color: #00a3bf;
+  }
+
+  /deep/.is-checked {
+    .el-checkbox__inner {
+      background-color: #00a3bf;
+      border-color: #00a3bf;
+    }
+  }
+}
+
+.color_10 {
+  /deep/.el-checkbox__inner {
+    border-color: #de350b;
+  }
+
+  /deep/.is-checked {
+    .el-checkbox__inner {
+      background-color: #de350b;
+      border-color: #de350b;
+    }
+  }
+}
+
+.color_11 {
+  /deep/.el-checkbox__inner {
+    border-color: #5243aa;
+  }
+
+  /deep/.is-checked {
+    .el-checkbox__inner {
+      background-color: #5243aa;
+      border-color: #5243aa;
+    }
+  }
+}

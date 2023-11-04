@@ -1,0 +1,42 @@
+@import "@/styles/mixin.scss";
+
+.box-wrapper {
+  position: relative;
+  padding: 0 20px 10px;
+  background-color: white;
+  border-left: 2px solid transparent;
+
+  .title {
+    width: 100%;
+    min-height: 34px;
+    padding: 10px 0;
+    font-size: 13px;
+    word-break: break-all;
+    word-wrap: break-word;
+
+    span:first-child {
+      color: red;
+    }
+
+    span:nth-child(2) {
+      color: $--color-text-secondary;
+    }
+  }
+
+  .control {
+    position: absolute;
+    right: 30px;
+    bottom: -18px;
+    z-index: 1;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    color: #d84636;
+    cursor: pointer;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 0 rgba(163, 163, 163, 0.5);
+
+    @include center;
+  }
+}

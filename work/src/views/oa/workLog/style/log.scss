@@ -1,0 +1,148 @@
+.main {
+  height: 100%;
+  padding-bottom: 40px;
+  overflow: auto;
+
+  &-header {
+    min-height: $--input-height;
+    padding: 0 40px;
+    margin-bottom: 16px;
+
+    .el-tag--info {
+      background-color: $--background-color-base;
+    }
+  }
+
+  &-label {
+    font-size: $--font-size-xxlarge;
+    font-weight: $--font-weight-primary;
+    color: $--color-text-primary;
+  }
+}
+
+.card {
+  position: relative;
+  margin-bottom: 16px;
+
+  .log-item {
+    padding-bottom: $--interval-base;
+    border-bottom: $--border-base;
+  }
+
+  .hello-card {
+    width: auto;
+
+    .user-img {
+      margin-right: 24px;
+    }
+
+    .greeting {
+      flex: 1;
+
+      .hello {
+        font-size: 20px;
+        font-weight: bold;
+
+        .status {
+          font-size: 14px;
+          font-weight: 400;
+
+          .wk {
+            margin-right: 1px;
+            margin-left: 15px;
+          }
+
+          .wk-success {
+            color: #20b559;
+          }
+
+          .wk-close {
+            color: #f95a5a;
+          }
+        }
+      }
+
+      .text {
+        margin-top: 10px;
+        font-weight: 400;
+        color: $--color-black;
+      }
+    }
+  }
+
+  // 顶部简介
+  &.is-intro {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 40px;
+    background-color: $--color-n10;
+  }
+
+  .report-menu {
+    margin-top: 16px;
+    margin-left: 74px;
+  }
+
+  // 完成信息
+  .done-info {
+    padding-top: 14px;
+    text-align: center;
+
+    .label {
+      margin-top: 12px;
+      font-size: $--font-size-large;
+    }
+
+    .count {
+      font-size: $--font-size-xxlarge;
+      color: $--color-primary;
+    }
+  }
+
+  &.filter-control {
+    padding: 0 40px;
+
+    .wk-user-dep-dialog-select {
+      width: 220px !important;
+    }
+
+    .time-type-select,
+    .el-date-editor {
+      margin-left: $--interval-base;
+    }
+
+    .el-select {
+      width: 100px;
+      margin-left: $--interval-base;
+    }
+
+    .el-input {
+      width: 200px;
+      margin-left: $--interval-base;
+    }
+  }
+
+  &.list-content {
+    padding: 0 40px;
+    margin-top: #{$--interval-base * 3};
+  }
+}
+
+.create-log {
+  padding: 0 40px;
+}
+
+.filter-right {
+  flex-shrink: 0;
+  margin-left: $--interval-base;
+
+  .total-count {
+    span {
+      color: $--color-primary;
+    }
+  }
+
+  .export-btn {
+    margin-left: $--interval-base;
+  }
+}

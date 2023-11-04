@@ -1,0 +1,23 @@
+@import "../styles/index.scss";
+@import "../styles/table.scss";
+
+.main-table-header {
+  position: relative;
+  margin: #{$--interval-base * 2} 0;
+  background-color: white;
+
+  .main-table-header-button {
+    position: absolute;
+    right: 0;
+  }
+
+  .el-date-editor--daterange {
+    width: 300px;
+  }
+
+  .el-date-editor--daterange,
+  .wk-user-select,
+  .el-select {
+    margin-right: 20px;
+  }
+}

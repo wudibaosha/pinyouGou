@@ -1,0 +1,436 @@
+/deep/.fc {
+  height: 100%;
+
+  .fc-event {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left-width: 2px;
+    border-radius: 0;
+  }
+
+  .fc-more {
+    padding: 0 3px;
+    overflow: hidden;
+    color: $--color-n200;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &:hover {
+      color: $--color-primary;
+    }
+  }
+
+  .fc-content-skeleton {
+    .fc-more-cell {
+      text-align: center;
+    }
+  }
+
+  .fc-header-toolbar {
+    padding-bottom: 6px;
+    padding-left: 165px;
+    margin-bottom: 16px;
+
+    .fc-center {
+      display: flex;
+      line-height: 20px;
+
+      h2 {
+        height: 100%;
+        font-size: 15px;
+        font-weight: lighter;
+        font-weight: bolder;
+        line-height: 34px;
+        color: $--color-black;
+        letter-spacing: 1px;
+      }
+
+      .fc-button-group {
+        .fc-button {
+          color: $--color-black;
+          background-color: #fff;
+          border: none;
+
+          .fc-icon {
+            font-size: 22.5px;
+          }
+        }
+
+        .fc-button:focus {
+          border: none;
+          box-shadow: none;
+        }
+      }
+    }
+
+    .fc-right {
+      margin-right: $--interval-base;
+
+      .fc-button + .fc-button {
+        margin-left: $--interval-base;
+      }
+
+      .fc-button {
+        box-sizing: border-box;
+        display: inline-block;
+        margin: 0;
+        font-weight: $--font-weight-primary;
+        line-height: 1;
+        color: $--button-default-font-color;
+        text-align: center;
+        white-space: nowrap;
+        cursor: pointer;
+        background: $--button-default-background-color;
+        border: $--border-base;
+        border-color: $--button-default-border-color;
+        outline: none;
+        transition: 0.1s;
+        -webkit-appearance: none;
+
+        &:hover,
+        &:focus {
+          color: $--button-default-font-color;
+
+          // border-color: $--color-primary-light-7;
+          background-color: $--button-default-hover-bg-color;
+          box-shadow: none;
+        }
+
+        &:active {
+          color: $--button-default-active-text-color;
+
+          // border-color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
+          background-color: $--button-default-active-bg-color;
+          box-shadow: none;
+        }
+
+        &::-moz-focus-inner {
+          border: 0;
+        }
+      }
+
+      .fc-button-active {
+        &,
+        &:hover,
+        &:focus,
+        &:active {
+          color: $--button-default-selected-text-color;
+          background-color: $--button-default-selected-bg-color;
+        }
+      }
+    }
+  }
+
+  .fc-view-container {
+    height: calc(100% - 58px);
+
+    .fc-dayGridMonth-view {
+      height: 100%;
+
+      .fc-scroller {
+        height: 100% !important;
+      }
+
+      table {
+        height: 100%;
+      }
+
+      .fc-head {
+        border: none;
+
+        .fc-head-container {
+          border-top: $--border-base;
+          border-right: none;
+          border-left: none;
+
+          .fc-row {
+            .fc-event {
+              height: 16px;
+            }
+
+            .fc-day-header {
+              height: 40px;
+              line-height: 40px;
+              vertical-align: unset;
+              background-color: $--color-n10;
+              border-top: $--border-base;
+            }
+          }
+        }
+      }
+
+      .fc-body {
+        height: 100% !important;
+        border-color: $--border-color-base;
+
+        tr {
+          .fc-widget-content {
+            height: 100%;
+            border-color: $--border-color-base;
+          }
+
+          .fc-widget-content:nth-child(1) {
+            border-right: none;
+            border-left: none;
+          }
+        }
+
+        .fc-scroller {
+          height: 100% !important;
+
+          .fc-day-grid {
+            height: 100%;
+            min-height: 600px;
+          }
+
+          .fc-row {
+            height: calc(100% / 6) !important;
+            min-height: 0;
+
+            .fc-day-top {
+              padding-top: 10px;
+              padding-left: 15px;
+              border: $--border-base;
+              border-bottom: none;
+
+              .fc-day-number {
+                display: inline-block;
+                width: 100%;
+                text-align: left;
+              }
+            }
+
+            .fc-bg {
+              .fc-sat,
+              .fc-sun {
+                background-color: #fcfcfc;
+              }
+            }
+
+            .fc-day {
+              border-color: $--border-color-base;
+            }
+          }
+        }
+      }
+
+      .fc-event-container {
+        .fc-day-grid-event {
+          .fc-content {
+            height: 20px;
+            padding-left: 4px;
+            line-height: 20px;
+          }
+
+          .fc-time {
+            display: none;
+          }
+
+          .fc-title {
+            display: inline-block;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+
+  .fc-more-popover {
+    width: 200px;
+    margin-left: -10px;
+    border: 1px solid rgba(239, 239, 239, 1);
+    border-radius: 4px;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.07);
+
+    .fc-header {
+      height: 30px;
+      padding: 0 15px;
+      background: rgba(247, 248, 250, 1);
+      border: 1px solid rgba(239, 239, 239, 1);
+      border-radius: 4px;
+
+      .fc-title {
+        font-size: 15px;
+        font-weight: bold;
+        color: $--color-black;
+      }
+
+      .fc-icon-x::before {
+        font-size: 15px;
+        font-weight: bold;
+        color: $--color-black;
+      }
+    }
+
+    .fc-event {
+      .fc-content {
+        text-align: center;
+
+        .fc-title {
+          display: inline-block;
+          width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .fc-event-container {
+      height: 146px;
+      overflow-y: auto;
+
+      /deep/.fc-day-grid-event {
+        margin-top: 4px !important;
+      }
+    }
+  }
+
+  .fc-listDay-view {
+    height: 100%;
+    padding-left: 10px;
+    border: none;
+
+    .fc-scroller {
+      height: 100% !important;
+    }
+
+    .fc-list-empty-wrap2 {
+      overflow: hidden;
+
+      .fc-list-empty-wrap1 {
+        position: absolute;
+        top: 30%;
+        display: block;
+        height: 50%;
+        text-align: center;
+
+        /* stylelint-disable-next-line selector-id-pattern */
+        #emityImg {
+          width: 20%;
+        }
+
+        .fc-list-empty {
+          display: block;
+          width: 100%;
+          margin-top: 10px;
+          font-size: 13px;
+          color: $--color-text-secondary;
+          text-align: center;
+          background-color: #fff;
+        }
+      }
+    }
+
+    .fc-list-table {
+      td {
+        border: none;
+      }
+
+      .fc-list-item {
+        line-height: 60px;
+        border-bottom: $--border-base;
+
+        .fc-list-item-marker {
+          display: none;
+        }
+
+        .fc-list-item-time {
+          padding-right: 30px;
+          font-size: 14px;
+          color: $--color-text-regular;
+        }
+
+        .fc-list-item-title {
+          font-size: 14px;
+          color: $--color-black;
+        }
+      }
+
+      .fc-list-heading {
+        .fc-widget-header {
+          background-color: #fff;
+
+          // border: none;
+          .fc-list-heading-main {
+            font-size: 16px;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+
+  .fc-timeGridWeek-view {
+    height: 100%;
+
+    .fc-body {
+      border: 1px $--border-color-base solid;
+    }
+
+    .fc-divider {
+      padding: 0;
+    }
+
+    table {
+      height: 100%;
+
+      .fc-body {
+        height: 100%;
+
+        tr {
+          height: 100%;
+
+          .fc-scroller {
+            height: calc(100% - 42px) !important;
+
+            .fc-content {
+              .fc-time {
+                display: none;
+              }
+            }
+
+            .fc-time-grid {
+              height: auto;
+
+              .fc-bg {
+                height: 100%;
+              }
+
+              .fc-slats {
+                height: auto;
+
+                .fc-minor {
+                  td {
+                    border: none;
+                    border-right: 1px solid #e4e4e4;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  th,
+  td {
+    border-color: $--border-color-base;
+    border-width: $--border-width-base;
+  }
+
+  .fc-widget-header {
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .fc-day-grid-event {
+    margin-left: 0;
+  }
+}

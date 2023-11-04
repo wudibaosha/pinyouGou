@@ -1,0 +1,20 @@
+/** 客户下相关信息 table 效果 */
+.rc-cont {
+  position: relative;
+  height: 100%;
+
+  .rc-head {
+    position: relative;
+    margin-bottom: #{$--interval-base * 2};
+    font-size: 0;
+    text-align: right;
+  }
+
+  .margin-left-8 {
+    margin-left: $--interval-base;
+  }
+
+  .margin-top-base2 {
+    margin-top: #{$--interval-base * 2};
+  }
+}
